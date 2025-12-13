@@ -1,7 +1,7 @@
 { config, pkgs, lib, home-manager, ... }:
 
 let
-  user           = "dustin";
+  user           = "tt";
   myEmacsLauncher = pkgs.writeScript "emacs-launcher.command" ''
     #!/bin/sh
     emacsclient -c -n &
@@ -71,11 +71,11 @@ in
       { path = "/System/Applications/Photos.app/"; }
       { path = "/System/Applications/Photo Booth.app/"; }
       { path = "/System/Applications/TV.app/"; }
-      { path = "${pkgs.jetbrains.phpstorm}/Applications/PhpStorm.app/"; }
+      # { path = "${pkgs.jetbrains.phpstorm}/Applications/PhpStorm.app/"; }
       { path = "/Applications/TablePlus.app/"; }
       { path = "/Applications/Claude.app/"; }
       { path = "/Applications/Discord.app/"; }
-      { path = "/Applications/TickTick.app/"; }
+      # { path = "/Applications/TickTick.app/"; }
       { path = "/System/Applications/Home.app/"; }
       {
         path    = toString myEmacsLauncher;
